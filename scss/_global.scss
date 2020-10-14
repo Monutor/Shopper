@@ -1,0 +1,134 @@
+@import 'vars';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: Lato;
+  font-weight: 400;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.jq-ry-container {
+  padding: 0;
+}
+
+.main-btn {
+  font-weight: 700;
+  background-color: $color;
+  border: none;
+  color: $white;
+  transition: all .2s;
+  &:hover {
+    background-color: darken($color, 10%);
+  }
+}
+
+.title {
+  color: $color;
+  line-height: 36px;
+  font-size: 30px;
+}
+
+.item {
+  max-width: 378px;
+  border: solid 1px #e0e0e0;
+  position: relative;
+    &::after {
+      display: none;
+      content: '';
+      position: absolute;
+      z-index: 500;
+      background-image: url(../images/section-img/arrow-right.svg);
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 23px;
+      bottom: 37px;
+      right: 20px;
+      cursor: pointer;
+    }
+  &__inner, .product__text {
+    padding: 18px 22px 13px 22px;
+  }
+  &__img {
+    max-width: 100%;
+    min-height: 302px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    color: #757575;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  &__descr {
+    line-height: 21px;
+  }
+  &__price {
+    font-family: $SegoeUi;
+    line-height: 24px;
+    color: $color;
+  }
+  &--big {
+    max-width: 610px !important;
+  }
+}

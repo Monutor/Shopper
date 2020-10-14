@@ -1,0 +1,139 @@
+.fancybox-content {
+  padding: 60px 50px 20px;
+  width: 502px;
+  border-radius: 5px;
+}
+
+.modal {
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__form {
+    width: 100%;
+  }
+  
+  &__input {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-family: Lato;
+    color: #878786;
+    border: solid 1px #c6c6c5;
+    border-radius: 5px;
+    padding: 11px 12px;
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+  &__form-inner {
+    display: flex;
+    justify-content: space-between;
+    color: #878786;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__form-label {
+    display: flex;
+  }
+  &__form-pass {
+    margin-bottom: 20px;
+  }
+  &__form-checkbox {
+    margin-right: 5px;
+  }
+  &__form-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  &__form-guest {
+    margin-right: 0;
+  }
+  &__form-create {
+    padding: 12px 25px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  &__text {
+    margin: 30px 0;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    color: #878786;
+    line-height: 17px;
+    &::after, &::before {
+      content: '';
+      position: absolute;
+      background-color: #f4f4f4;
+      height: 3px;
+      top: 50%;
+    }
+    &::after {
+      width: calc(50% - 20px);
+      left: 0;
+    }
+    &::before {
+      width: calc(50% - 20px);
+      right: 0;
+    }
+  }
+  &__social {
+    margin-bottom: 37px;
+  }
+  &__social-btn {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    & > a:not(:first-child) {
+      margin-left: 30px;
+    }
+    svg {
+      width: 30px;
+      height: 30px;
+      path {
+        fill: #fff;
+      }
+    }
+    .facebook, .google, .pint {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .facebook {
+      background-color: #3B5998;
+    }
+    .google {
+      background-color: #DC4E41;
+    }
+
+    .pint {
+      background-color: #CB2027;
+    }
+  }
+  &__footer {
+    border-top: 1px solid #F4F4F4;
+    padding-top: 20px;
+    color: #878786;
+  }
+  &__footer-btn {
+    background-color: transparent;
+    border: 1px solid $color;
+    border-radius: 5px;
+    color: $color;
+    padding: 10px 20px;
+    margin-left: 12px;
+    &:hover{
+      color: #fff ;
+    }
+  }
+}

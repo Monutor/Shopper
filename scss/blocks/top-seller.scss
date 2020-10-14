@@ -1,0 +1,15 @@
+.top-seller {
+  padding-top: 30px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+  }
+  &__title {
+    margin-bottom: 25px;
+  }
+}

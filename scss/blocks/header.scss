@@ -1,0 +1,231 @@
+ .header {
+   &__top-inner {
+     display: flex;
+     align-items: center;
+     min-height: 102px;
+   }
+
+   &__top-logo {
+     margin-right: 132px;
+   }
+
+   &__top-form {
+     position: relative;
+   }
+
+   &__top-search {
+     width: 401px;
+     border: solid 1px #e0e0e0;
+     padding: 10px 80px 10px 14px;
+     border-top-left-radius: 3px;
+     border-bottom-left-radius: 3px;
+     font-size: 14px;
+     font-family: Lato;
+     font-weight: 400;
+     line-height: 19px;
+     color: #757575;
+   }
+
+   &__top-button {
+     cursor: pointer;
+     position: absolute;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     padding: 0px 14px;
+     font-size: 14px;
+     line-height: 17px;
+     border-top-right-radius: 3px;
+     border-bottom-right-radius: 3px;
+
+   }
+
+   &__top-buttons {
+     margin-left: auto;
+     display: flex;
+     align-items: center;
+   }
+
+   &__top-btn {
+     cursor: pointer;
+     background-color: transparent;
+     border: solid 1px #757575;
+     border-radius: 3px;
+     padding: 9px 20px;
+     font-size: 14px;
+     line-height: 19px;
+     color: #757575;
+     transition: all .2s;
+
+     &--like,
+     &--cart {
+       border: none;
+       padding: 0;
+
+       svg path {
+         fill: #C8C8C8;
+       }
+
+       &:active svg path {
+         fill: $color;
+       }
+     }
+
+     &--like {
+       margin-right: 29px;
+     }
+
+     &--sign {
+       margin-left: 21px;
+       margin-right: 26px;
+     }
+
+     &--sign:hover,
+     &--login:hover {
+       background-color: $color;
+       color: $white;
+     }
+
+     &--notice {
+       position: relative;
+
+       &::after {
+         content: '9+';
+         position: absolute;
+         width: 28px;
+         height: 28px;
+         border-radius: 50%;
+         background-color: $color;
+         top: -15px;
+         right: -15px;
+         font-size: 14px;
+         line-height: 28px;
+         color: #fff;
+         font-family: $SegoeUi;
+       }
+     }
+   }
+
+   .user {
+     width: 57px;
+     margin-left: 21px;
+     position: relative;
+
+     &::after {
+       content: '';
+       position: absolute;
+       background-image: url(../../images/header-img/sort-down-solid.svg);
+       background-repeat: no-repeat;
+       width: 10px;
+       height: auto;
+       top: 8px;
+       bottom: 0;
+       right: 2px;
+     }
+
+     &__avatar {
+       width: 41px;
+       height: 43px;
+       border-radius: 50%;
+       background-color: #ccc;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+       svg {
+         width: 20px;
+         height: 20px;
+
+         path {
+           fill: rgb(68, 66, 66);
+         }
+       }
+
+     }
+   }
+
+
+   &__bottom {
+     background-color: #f4f4f4;
+   }
+
+   .menu__item {
+     display: flex;
+     padding: 0 14px;
+   }
+
+   .menu__item-list {
+     position: relative;
+     font-size: 15px;
+     color: #737270;
+     line-height: 18px;
+     padding: 14px 0;
+
+     &:not(:last-child) {
+       margin-right: 30px;
+     }
+
+     &:hover {
+       .dropdown {
+         opacity: 1;
+         display: block;
+       }
+     }
+   }
+ }
+
+ .dropdown {
+   opacity: 0;
+   display: none;
+   position: absolute;
+   z-index: 999;
+   top: 40px;
+   left: -27px;
+   width: 620px;
+   background-color: #fff;
+   box-shadow: 0.7px 10px 20px rgba(9, 9, 9, 0.2);
+   padding: 30px;
+
+   &__header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-bottom: 20px;
+     border-bottom: 1px solid $color;
+   }
+
+   &__header-title {
+     font-weight: 700;
+     color: #000;
+     font-size: 20px;
+     line-height: 1;
+   }
+
+   &__header-descr {
+     color: $color;
+   }
+
+   &__header-quantity {
+     font-size: 12px;
+     color: #878786;
+     line-height: 16px;
+   }
+
+   &__menu {
+     margin-top: 20px;
+     column-count: 3;
+   }
+
+   &__menu-list {
+     line-height: 30px;
+   }
+
+   &__menu-link {
+     color: #878786;
+     transition: all .2s;
+
+     &:hover {
+       color: darken(#868686, $amount: 15);
+     }
+   }
+ }

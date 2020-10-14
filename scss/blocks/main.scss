@@ -1,0 +1,29 @@
+.main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 650px;
+  position: relative;
+  box-shadow:0 0 0 325px rgba(0, 0, 0, 0.33) inset;
+  z-index: 1;
+  &__inner {
+    text-align: center;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
+    color: $white;
+    margin-bottom: 35px;
+    max-width: 971px;
+  }
+  &__link {
+    padding: 17px 40px;
+    border-radius: 3px;
+  }
+}

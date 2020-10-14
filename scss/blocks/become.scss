@@ -1,0 +1,31 @@
+.become {
+  padding-top: 125px;
+  padding-bottom: 120px;
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:not(:last-child) {
+      margin-bottom: 146px;
+    }
+    &--padding {
+      padding-left: 125px;
+    }
+  }
+  &__text {
+    max-width: 620px;
+  }
+  &__text--order {
+    order: 1;
+  }
+  &__text-descr {
+    color: #757575;
+    line-height: 19px;
+    margin: 25px 0;
+  }
+  &__text-link {
+    padding: 11px 25px;
+    border-radius: 5px;
+  }
+
+}

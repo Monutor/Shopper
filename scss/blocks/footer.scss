@@ -1,0 +1,20 @@
+.footer {
+  padding-top: 20px;
+  &__inner {
+    border-top: 1px solid #c6c6c5;
+  }
+  &__item {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  &__item-list {
+    font-weight: 600;
+    color: #878787;
+    font-size: 14px;
+    line-height: 25px;
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+}
