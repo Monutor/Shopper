@@ -1,0 +1,47 @@
+.category {
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 0;
+    grid-template-areas: 
+    "category-1 category-2 category-3 category-4";
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    min-height: 298px;
+    &:first-child {
+      grid-area: category-1;
+      
+    }
+    &:nth-child(4) {
+      grid-area: category-4;
+    }
+    &:nth-child(6), &:nth-child(7) {
+      margin-top: 0;
+    }
+    &:nth-child(10) {
+      max-width: max-content;
+      height: auto;
+      grid-area: initial;
+    }
+  }
+
+  &__item-img img {
+    object-fit: cover;
+  }
+  &__wrapper-btn {
+    text-align: center;
+  }
+  &__button {
+    background-color: transparent;
+    color: $color;
+    border: 1px solid $color;
+    border-radius: 5px;
+    padding: 10px 18px;
+  }
+}

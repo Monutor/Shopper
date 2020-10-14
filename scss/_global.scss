@@ -132,3 +132,37 @@ body {
     max-width: 610px !important;
   }
 }
+
+.breadcrums {
+  padding: 25px 0;
+  font-family: 'HelveticaRegular', sans-serif;
+  font-size: 14px;
+  &__item {
+    display: flex;
+  }
+  &__item-list {
+    padding-right: 20px;
+    margin-right: 13px;
+    position: relative;
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url(../images/section-img/caret-right-solid.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 15px;
+      height: 15px;
+      right: -8px;
+      top: 1px;
+    }
+    &:last-child::after {
+      content: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

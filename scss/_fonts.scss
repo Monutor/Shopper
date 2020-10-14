@@ -52,7 +52,6 @@
   font-display: swap;
 }
 
-
 @font-face {
   font-family: 'SegoeUI-Regular';
   src: url('../fonts/SegoeUI-Regular.woff2') format('woff2'),
@@ -60,6 +59,19 @@
     url('../fonts/SegoeUI-Regular.woff') format('woff'),
     /* Modern Browsers */
     url('../fonts/SegoeUI-Regular.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/HelveticaRegular.woff2') format('woff2'),
+    /* Modern Browsers */
+    url('../fonts/HelveticaRegular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/HelveticaRegular.ttf') format('truetype');
   /* Safari, Android, iOS */
   font-weight: 400;
   font-style: normal;
