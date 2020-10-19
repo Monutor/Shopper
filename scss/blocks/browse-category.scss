@@ -1,0 +1,30 @@
+.browse {
+  &__item {
+    font-size: 14px;
+    line-height: 28px;
+    max-height: 364px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  
+  &__item-list {
+    padding-left: 13px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url(../../images/aside-img/arrow-list.svg);
+      width: 9px;
+      height: 14px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+  .nicescroll-rails, .nicescroll-rails-vr {
+    width: 10px !important;
+    border-radius: 5px;
+    left: 560.5px !important;
+  }

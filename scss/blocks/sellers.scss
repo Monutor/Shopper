@@ -1,0 +1,109 @@
+.subscription {
+  &__inner {
+    border: solid 1px #c6c6c5;
+    text-align: center;
+    padding: 26px 23px;
+  }
+  &__logo {
+    margin: 0 auto;
+    width: 103px;
+    height: 103px;
+    border-radius: 50%;
+    border: 1px solid #C6C6C5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-family: $SegoeUi, serif;
+    color: #000;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 18px;
+  }
+  &__location {
+    font-size: 14px;
+    color: #878786;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  &__buttons {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__btn {
+    padding: 11px 21px;
+    background-color: transparent;
+    border: 1px solid $color;
+    color: $color;
+    border-radius: 5px;
+    transition: all .2s;
+    &:hover {
+      background-color: $color;
+      color: #fff;
+    }
+  }
+  &__descr {
+    margin-top: 21px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  &__text {
+    text-transform: uppercase;
+    margin-top: 22px;
+    font-size: 14px;
+    color: #878786;
+    border-bottom: 1px solid #C6C6C5;
+    padding-bottom: 12px;
+  }
+  &__user {
+    margin-top: 10px;
+  }
+  &__user-inner {
+    display: flex;
+    align-items: center;
+  }
+  &__avatar {
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    background-color: #9B9B9A;
+    margin-right: 14px;
+    flex: 0 0 73px;
+  }
+  &__name {
+    width: 264px;
+    font-size: 24px;
+    text-align: left;
+  }
+ 
+  &__icon {
+    padding: 0;
+    margin-top: 21px;
+    background-color: transparent;
+    border: none;
+    svg path {
+      fill: #C8C8C8;
+    }
+    svg path:active {
+      fill: $color;
+    }
+  }
+  &__like-btn {
+    margin-right: 15px;
+  }
+}
+
+.sellers__category-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 50px;
+  grid-template-areas: 
+  "category-1 category-2 category-3";
+  margin-bottom: 60px;
+
+  .category__item:nth-child(4) {
+    grid-area: initial;
+  }
+}
