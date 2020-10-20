@@ -189,3 +189,32 @@ body {
     margin-top: 30px;
   }
 }
+
+.active {
+  height: 0;
+  overflow: hidden;
+}
+
+//CustomScroll
+.mCSB_scrollTools {
+  right: 2px;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+  width: 8px;
+  background-color:rgba( #C8C8C8, .2);
+}
+
+.mCSB_dragger {
+  width: 8px !important;
+  background-color: #c8c8c8;
+  border-radius: 15px;
+  right: 4px;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: transparent;
+}
+
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+  background-color: transparent !important;
+}

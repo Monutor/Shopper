@@ -4,7 +4,7 @@ $(function () {
     // Optional parameters
     slidesPerView: 4,
     loop: true,
-    
+
     // Navigation arrows
     navigation: {
       nextEl: '.slider__btn-right',
@@ -18,7 +18,7 @@ $(function () {
   });
 
   //myScript
-  // $('.events__btn-toggle').on('click', function() {
+  // $('.events__btn-toggle').on('click', function () {
   //   $('.events__wrapper-body').toggleClass('active');
   //   if ($('.events__wrapper-body').hasClass('active')) {
   //     $(this).find('.icon-plus').show()
@@ -27,16 +27,22 @@ $(function () {
   //   }
   // })
 
-  
+  //myScript v2
 
-  //niceScroll
-  $("#scroll, .scroll").niceScroll({
-    cursorcolor: "#C8C8C8",
-    cursorwidth: "10px",
-    cursorborderradius: "5px",
-    background: "#f4f4f4",
-    autohidemode: false,
-  })
+  $('.events__btn-toggle').on('click', function () {
+    $(this).parent().next().toggleClass('active');
+    if ($('.events__wrapper-body, .filter__item').hasClass('active')) {
+      $(this).find('.icon-plus').show();
+    } 
+    else {
+      $(this).find('.icon-plus').hide();
+    }
+  });
+
+  //mCustomScrollbar
+  $(".content").mCustomScrollbar({
+    setWidth: true,
+  });
 
   //Range-Slider
   $(".js-range-slider").ionRangeSlider({
