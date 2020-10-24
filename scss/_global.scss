@@ -89,6 +89,7 @@ body {
   border: none;
   color: $white;
   transition: all .2s;
+  cursor: pointer;
   &:hover {
     background-color: darken($color, 10%);
   }

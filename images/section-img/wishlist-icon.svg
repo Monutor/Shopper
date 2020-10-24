@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="23px" height="21px" viewBox="0 0 23 21" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <path d="M9.9994 18.0004C9.9994 18.0004 8.60022 16.6305 8.60022 16.6305C3.39983 12.1306 -0.00067997 9.09802 -0.00067997 5.38063C-0.00067997 2.34807 2.39918 5.126e-06 5.49969 5.126e-06C7.19994 5.126e-06 8.9002 0.782897 9.9994 2.05441C11.0997 0.782897 12.7999 5.126e-06 14.5002 5.126e-06C17.5996 5.126e-06 20.0006 2.34807 20.0006 5.38063C20.0006 9.09802 16.6 12.1306 11.4008 16.6305C11.4008 16.6305 9.9994 18.0004 9.9994 18.0004Z" transform="translate(1 1)" id="path_1" />
+  </defs>
+  <g id="shortlist-copy-3">
+    <use xlink:href="#path_1" fill="none" stroke="#2D4A0A" stroke-width="2" />
+    <use stroke="none" fill="#8BC34A" xlink:href="#path_1" fill-rule="evenodd" />
+  </g>
+</svg>

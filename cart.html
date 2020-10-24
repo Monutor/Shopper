@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOPPER</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <a class="header__top-logo logo" href="#">
+                <img src="images/header-img/logo.svg" alt="logo">
+              </a>
+              <form class="header__top-form">
+                <input class="header__top-search" type="search" placeholder="Search for Products">
+                <button class="header__top-button main-btn" type="submit">Search</button>
+              </form>
+              <div class="header__top-buttons">
+                <button class="header__top-btn header__top-btn--login" type="button">
+                  Request Quote
+                </button>
+                <button class="header__top-btn header__top-btn--sign header__top-btn--notice" type="button">
+                  Dashboard
+                </button>
+                <button class="header__top-btn header__top-btn--like" type="button">
+                  <svg width="31px" height="30px" viewBox="0 0 31 30" version="1.1">
+                    <path
+                      d="M15.0002 28.0003C15.0002 28.0003 13.0404 26.0218 13.0404 26.0218C5.76098 19.5219 0.999626 15.1412 0.999626 9.77163C0.999626 5.3913 4.35962 1.99986 8.69947 1.99986C11.0796 1.99986 13.4609 3.13056 15.0002 4.96725C16.5395 3.13056 18.9207 1.99986 21.2997 1.99986C25.6396 1.99986 29.0007 5.3913 29.0007 9.77163C29.0007 15.1412 24.2404 19.5219 16.9599 26.0218C16.9599 26.0218 15.0002 28.0003 15.0002 28.0003Z"
+                      id="Shape-sp-1536-0" fill="" fill-rule="evenodd" stroke="none" />
+                  </svg>
+                </button>
+                <button class="header__top-btn header__top-btn--cart" type="button">
+                  <svg width="33px" height="28px" viewBox="0 0 33 28" version="1.1">
+                    <desc>Created with Lunacy</desc>
+                    <path
+                      d="M20.033 2.29963C20.414 1.56625 20.1873 0.628992 19.5283 0.205572C18.8692 -0.217548 18.0273 0.0333717 17.6463 0.766752L13.9699 7.84696C13.59 8.58004 13.8155 9.5179 14.4757 9.94102C15.1348 10.3644 15.9778 10.1129 16.3577 9.37984L20.033 2.29963ZM1.60828 9.02068L11.6555 9.02068C11.6554 9.0302 11.6554 9.03973 11.6554 9.04927C11.6554 10.913 13.0831 12.4241 14.8435 12.4241C16.604 12.4241 18.0317 10.913 18.0317 9.04927C18.0317 9.03973 18.0316 9.0302 18.0315 9.02068L30.3922 9.02068C31.2801 9.02068 32.0005 9.7759 32.0005 10.7079C32.0005 11.6394 31.2801 12.3949 30.3922 12.3949L29.3963 12.3949L23.4236 27.0177L8.41696 27.0177L2.44434 12.3949L1.60828 12.3949C0.719296 12.3949 -2.00272e-05 11.6394 -2.00272e-05 10.7079C-2.00272e-05 9.7759 0.719296 9.02068 1.60828 9.02068ZM10.9701 14.6117L10.5299 14.6117C9.97817 14.6117 9.53148 15.0585 9.53148 15.6098L9.53148 22.6445C9.53148 23.1958 9.97817 23.6429 10.5299 23.6429L10.9701 23.6429C11.5219 23.6429 11.9685 23.1958 11.9685 22.6445L11.9685 15.6098C11.9685 15.0585 11.5219 14.6117 10.9701 14.6117ZM15.7172 14.6117L16.1891 14.6117C16.7408 14.6117 17.1886 15.0585 17.1886 15.6098L17.1886 22.6445C17.1886 23.1958 16.7408 23.6429 16.1891 23.6429L15.7172 23.6429C15.1654 23.6429 14.7187 23.1958 14.7187 22.6445L14.7187 15.6098C14.7187 15.0585 15.1654 14.6117 15.7172 14.6117ZM21.3446 14.6117L20.8727 14.6117C20.322 14.6117 19.8742 15.0585 19.8742 15.6098L19.8742 22.6445C19.8742 23.1958 20.322 23.6429 20.8727 23.6429L21.3446 23.6429C21.8964 23.6429 22.3441 23.1958 22.3441 22.6445L22.3441 15.6098C22.3441 15.0585 21.8964 14.6117 21.3446 14.6117Z"
+                      id="Cart-icon" fill="" fill-rule="evenodd" stroke="none" />
+                  </svg>
+                </button>
+              </div>
+              <div class="header__top-user user">
+                <div class="user__avatar">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
+                    class="svg-inline--fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+                    </path>
+                  </svg>
+                  <!-- <img class="user__avatar-img" src="" alt="avatar"> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <nav class="header__bottom-nav nav">
+              <ul class="header__bottom-menu menu__item">
+                <li class="menu__item-list">
+                  <a class="menu__item-link" href="#">
+                    Home Decor
+                  </a>
+                  <div class="dropdown">
+                    <div class="dropdown__header">
+                      <div class="dropdown__header-text">
+                        <h4 class="dropdown__header-title">Home Decor</h4>
+                        <p class="dropdown__header-descr">Create & live your unique style</p>
+                      </div>
+                      <span class="dropdown__header-quantity">25478 items</span>
+                    </div>
+                    <ul class="dropdown__menu">
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Pots & Pans
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Pressure Cookers
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Kitchen Tools
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Gas Stoves
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Dining & Serving
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Coffee Mugs
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Wardrobes
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Dinnerware & Crockery
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Bar & Glassware
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Kitchen Storage
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Lunch Boxes
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Flasks & Casseroles
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Kitchen Containers
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Furniture
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Beds
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Sofas
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Dining tables & Sets
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Mattresses
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Tables
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Chairs
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Bean Bags
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          Shoe Racks
+                        </a>
+                      </li>
+                      <li class="dropdown__menu-list">
+                        <a href="#" class="dropdown__menu-link">
+                          TV Units & Cabinets
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu__item-list">
+                  <a class="menu__item-link" href="#">
+                    Furniture
+                  </a>
+                </li>
+                <li class="menu__item-list">
+                  <a class="menu__item-link" href="#">
+                    Lighting
+                  </a>
+                </li>
+                <li class="menu__item-list">
+                  <a class="menu__item-link" href="#">
+                    Home Accents
+                  </a>
+                </li>
+                <li class="menu__item-list">
+                  <a class="menu__item-link" href="#">
+                    Rugs
+                  </a>
+                </li>
+                <li class="menu__item-list">
+                  <a class="menu__item-link" href="#">
+                    Outdoors
+                  </a>
+                </li>
+                <li class="menu__item-list">
+                  <a class="menu__item-link" href="#">
+                    Holidays
+                  </a>
+                </li>
+                <li class="menu__item-list">
+                  <a class="menu__item-link" href="#">
+                    Gifts
+                  </a>
+                </li>
+                <li class="menu__item-list">
+                  <a class="menu__item-link" href="#">
+                    Events
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="breadcrums">
+        <div class="container">
+          <ul class="breadcrums__item">
+            <li class="breadcrums__item-list">
+              <a class="breadcrums__item-link" href="#">Home</a>
+            </li>
+            <li class="breadcrums__item-list">
+              <span class="breadcrums__item-link">Cart</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main__wrapper">
+        <div class="container container-flex">
+          <div class="left__column">
+            <section class="cart">
+              <div class="cart__table">
+                <div class="cart__title">
+                  <div class="cart__title-detail">
+                    item detail
+                  </div>
+                  <div class="cart__title-price">
+                    price
+                  </div>
+                  <div class="cart__title-qty">
+                    qty
+                  </div>
+                </div>
+                <div class="cart__row">
+                  <div class="cart__item">
+                    <div class="cart__item-wrapper">
+                      <div class="cart__item-img">
+                        <img src="images/section-img/img-2.png" alt="">
+                      </div>
+                      <div class="cart__item-text">
+                        <div class="cart__item-title">Product Name Here</div>
+                        <div class="cart__item-descr">Supplier’s Name Here</div>
+                      </div>
+                    </div>
+                    <div class="cart__item-price">$28.99</div>
+                    <div class="cart__item-qty">1000</div>
+                    <div class="cart__item-total">$28.99</div>
+                  </div>
+                </div>
+                <div class="cart__row">
+                  <div class="cart__item">
+                    <div class="cart__item-wrapper">
+                      <div class="cart__item-img">
+                        <img src="images/section-img/img-2.png" alt="">
+                      </div>
+                      <div class="cart__item-text">
+                        <div class="cart__item-title">Product Name Here</div>
+                        <div class="cart__item-descr">Supplier’s Name Here</div>
+                      </div>
+                    </div>
+                    <div class="cart__item-price">$28.99</div>
+                    <div class="cart__item-qty">1</div>
+                    <div class="cart__item-total">$28.99</div>
+                  </div>
+                </div>
+                <div class="cart__row">
+                  <div class="cart__item">
+                    <div class="cart__item-wrapper">
+                      <div class="cart__item-img">
+                        <img src="images/section-img/img-2.png" alt="">
+                      </div>
+                      <div class="cart__item-text">
+                        <div class="cart__item-title">Product Name Here</div>
+                        <div class="cart__item-descr">Supplier’s Name Here</div>
+                      </div>
+                    </div>
+                    <div class="cart__item-price">$28.99</div>
+                    <div class="cart__item-qty">1</div>
+                    <div class="cart__item-total">$28.99</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__wrapper">
+                <form class="cart__form" action="#">
+                  <input class="cart__coupon" type="text" placeholder="Coupon code">
+                  <button class="cart__button main-btn" type="submit">apply</button>
+                </form>
+                <div class="cart__text">
+                  <div class="cart__subtotal">
+                    Subtotal <span>$145.84</span>
+                  </div>
+                  <div class="cart__subtotal">
+                    Shipping <span>$5.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__box">
+                <div class="cart__box-inner">
+                  <div class="cart__box-title">
+                    Total Amount
+                  </div>
+                  <div class="cart__box-total">
+                    $254.84
+                  </div>
+                </div>
+                <button class="cart__btn main-btn" type="button">process to checkout</button>
+              </div>
+            </section>
+          </div>
+          <div class="right__column">
+            <a class="offer__link" href="#">
+              <img src="images/section-img/offer_1.jpeg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <section class="info">
+        <div class="container">
+          <div class="info__inner">
+            <div class="info__items">
+              <div class="info__items-title">How We Help</div>
+              <ul class="info__item">
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    Retailers
+                  </a>
+                </li>
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    Interiors Designers
+                  </a>
+                </li>
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    Product Designers
+                  </a>
+                </li>
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    Wholesalers / Importers
+                  </a>
+                </li>
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    Artisans
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="info__items">
+              <div class="info__items-title">Get to Know Us</div>
+              <ul class="info__item">
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    About
+                  </a>
+                </li>
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    Policies
+                  </a>
+                </li>
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    Careers
+                  </a>
+                </li>
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    Press
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="info__items">
+              <div class="info__items-title">Join the Community</div>
+              <ul class="info__item">
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    Upcoming Events
+                  </a>
+                </li>
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    Become a Buyer
+                  </a>
+                </li>
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    Become a Seller
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="info__items">
+              <div class="info__items-title">Follow Us</div>
+              <ul class="info__item info__social">
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="11px" height="15px" viewBox="0 0 11 15" version="1.1"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                      <desc>Created with Lunacy</desc>
+                      <path
+                        d="M8.73308 1.49652C8.73308 1.49652 7.00545 1.49437 7.00545 1.49437C5.06543 1.49437 3.81077 2.6189 3.81077 4.35997C3.81077 4.35997 3.81077 5.68099 3.81077 5.68099C3.81077 5.68099 2.07329 5.68099 2.07329 5.68099C1.92439 5.68099 1.80178 5.78739 1.80178 5.9193C1.80178 5.9193 1.80178 7.8335 1.80178 7.8335C1.80178 7.96449 1.92439 8.07088 2.07329 8.07088C2.07329 8.07088 3.80967 8.07088 3.80967 8.07088C3.80967 8.07088 3.80967 12.9017 3.80967 12.9017C3.80967 13.0327 3.9323 13.1397 4.08119 13.1397C4.08119 13.1397 6.34746 13.1397 6.34746 13.1397C6.49855 13.1397 6.62008 13.0327 6.62008 12.9017C6.62008 12.9017 6.62008 8.07088 6.62008 8.07088C6.62008 8.07088 8.65096 8.07088 8.65096 8.07088C8.80096 8.07088 8.92247 7.96449 8.92247 7.8335C8.92247 7.8335 8.92357 5.9193 8.92357 5.9193C8.92357 5.85596 8.89511 5.79568 8.84475 5.7514C8.79329 5.70589 8.72432 5.68099 8.65206 5.68099C8.65206 5.68099 6.62008 5.68099 6.62008 5.68099C6.62008 5.68099 6.62008 4.56108 6.62008 4.56108C6.62008 4.02295 6.76678 3.74928 7.56929 3.74928C7.56929 3.74928 8.73198 3.74928 8.73198 3.74928C8.88416 3.74928 9.00459 3.64289 9.00459 3.51157C9.00459 3.51157 9.00459 1.73423 9.00459 1.73423C9.00459 1.60292 8.88416 1.49652 8.73308 1.49652Z"
+                        id="Shape-sp-414-0" fill="" fill-rule="evenodd" stroke="none" />
+                    </svg>
+                    Facebook
+                  </a>
+                </li>
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                      <desc>Created with Lunacy</desc>
+                      <path
+                        d="M3.55391 9.19392C4.22832 8.09768 3.33715 7.85722 3.19701 7.06294C2.62661 3.81512 7.26974 1.59742 9.70133 3.86648C11.3841 5.43781 10.275 10.2705 7.56315 9.7671C4.96514 9.28802 8.83642 5.44149 6.76173 4.68688C5.07681 4.0728 4.18125 6.56355 4.98047 7.80125C4.51189 9.93008 3.50356 11.935 3.91192 14.6035C5.23666 13.7197 5.68443 12.0257 6.0501 10.2594C6.71576 10.6318 7.07266 11.0189 7.92114 11.0792C11.0523 11.3021 12.8019 8.20285 12.3727 5.34248C11.9928 2.80653 9.24588 1.51533 6.31505 1.81821C3.99841 2.05714 1.68945 3.78006 1.5931 6.24437C1.53507 7.74835 1.99928 8.8772 3.55391 9.19392Z"
+                        id="Shape-sp-416-0" fill="none" fill-rule="evenodd" stroke="none" />
+                    </svg>
+                    Pinterest
+                  </a>
+                </li>
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                      <desc>Created with Lunacy</desc>
+                      <path
+                        d="M14.2262 2.06547C13.7029 2.33545 13.1248 2.53194 12.5073 2.63804C12.0147 2.17863 11.3118 1.89327 10.5334 1.89327C9.04005 1.89327 7.8281 2.94892 7.8281 4.24995C7.8281 4.43414 7.85326 4.61434 7.89816 4.78653C5.6516 4.68814 3.65794 3.74966 2.32334 2.32407C2.09014 2.67155 1.95877 3.07623 1.95877 3.50857C1.95877 4.32652 2.43611 5.04791 3.16088 5.47043C2.71747 5.4575 2.30035 5.35111 1.93578 5.1743C1.93578 5.1743 1.93578 5.20382 1.93578 5.20382C1.93578 6.34587 2.86856 7.2979 4.10461 7.51499C3.87798 7.56881 3.63931 7.59832 3.39189 7.59832C3.21781 7.59832 3.04922 7.58264 2.8828 7.55496C3.22766 8.49161 4.22614 9.17272 5.40963 9.19272C4.48342 9.82432 3.31744 10.2007 2.05074 10.2007C1.83178 10.2007 1.6161 10.1896 1.4048 10.1684C2.60142 10.8369 4.0236 11.2274 5.55086 11.2274C10.5268 11.2274 13.2474 7.63584 13.2474 4.52117C13.2474 4.52117 13.2387 4.21582 13.2387 4.21582C13.7686 3.88495 14.2284 3.46952 14.5897 2.99781C14.1047 3.18477 13.5846 3.31176 13.0372 3.36865C13.5956 3.07745 14.0237 2.61466 14.2262 2.06547Z"
+                        id="Shape-sp-415-0" fill="none" fill-rule="evenodd" stroke="none" />
+                    </svg>
+                    Twitter
+                  </a>
+                </li>
+                <li class="info__item-list">
+                  <a class="info__item-link" href="#">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                      <desc>Created with Lunacy</desc>
+                      <path
+                        d="M9.41758 -4.11272e-05C9.79637 -4.11272e-05 10.1215 0.132195 10.3941 0.396329C10.6668 0.660164 10.8014 0.976584 10.8014 1.34496L10.8014 9.14042C10.8014 9.5088 10.6668 9.82553 10.3941 10.0891C10.1215 10.3532 9.79637 10.4854 9.41758 10.4854L1.38599 10.4854C1.00608 10.4854 0.679825 10.3532 0.409401 10.0891C0.136793 9.82553 -5.68628e-05 9.5088 -5.68628e-05 9.14042L-5.68628e-05 1.34496C-5.68628e-05 0.976584 0.136793 0.659865 0.409401 0.396329C0.679825 0.132195 1.00608 -4.11272e-05 1.38599 -4.11272e-05L9.41758 -4.11272e-05ZM9.43837 3.09926C9.53253 3.00824 9.57851 2.89662 9.57851 2.76501L9.57851 1.63832C9.57851 1.51103 9.53253 1.40063 9.43837 1.30746C9.34422 1.21398 9.22926 1.16754 9.0935 1.16754L7.8695 1.16754C7.73483 1.16754 7.61878 1.21398 7.52462 1.30746C7.43156 1.40063 7.38449 1.51103 7.38449 1.63832L7.38449 2.76501C7.38449 2.89662 7.43156 3.00824 7.52462 3.09926C7.61878 3.18998 7.73483 3.23579 7.8695 3.23579L9.0935 3.23579C9.22926 3.23579 9.34422 3.18998 9.43837 3.09926ZM5.40834 3.18106C4.81277 3.18106 4.30258 3.38031 3.87888 3.77823C3.45519 4.17643 3.2417 4.65798 3.2417 5.22193C3.2417 5.78619 3.45519 6.26744 3.87888 6.66564C4.30258 7.06386 4.81277 7.26312 5.40834 7.26312C6.0094 7.26312 6.52068 7.06386 6.94547 6.66564C7.36917 6.26744 7.58156 5.78619 7.58156 5.22193C7.58156 4.65798 7.36917 4.17643 6.94547 3.77823C6.52068 3.38031 6.0094 3.18106 5.40834 3.18106ZM9.57851 8.86059C9.57851 8.97898 9.5369 9.07768 9.45151 9.15733C9.3672 9.23728 9.26649 9.27694 9.14933 9.27694L1.63232 9.27694C1.5108 9.27694 1.40788 9.23728 1.32577 9.15733C1.24475 9.07799 1.20315 8.97898 1.20315 8.86059L1.20315 4.4372L2.19506 4.4372C2.1009 4.72378 2.05383 5.02205 2.05383 5.3314C2.05383 6.20501 2.38227 6.9504 3.03916 7.56693C3.69495 8.18378 4.48542 8.4922 5.40834 8.4922C6.01815 8.4922 6.5809 8.35076 7.09656 8.06877C7.61222 7.78649 8.01948 7.40334 8.31947 6.91842C8.62054 6.43379 8.76943 5.9049 8.76943 5.3314C8.76943 5.02205 8.72346 4.72378 8.6293 4.4372L9.57851 4.4372L9.57851 8.86059Z"
+                        id="Combined-shape-417" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+                    </svg>
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <ul class="footer__item">
+          <li class="footer__item-list">
+            <a class="footer__item-link" href="#">
+              © 2016 Uimint.com
+            </a>
+          </li>
+          <li class="footer__item-list">
+            <a class="footer__item-link" href="#">
+              Terms & Conditions
+            </a>
+          </li>
+          <li class="footer__item-list">
+            <a class="footer__item-link" href="#">
+              Privacy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

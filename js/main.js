@@ -39,6 +39,17 @@ $(function () {
     }
   });
 
+  //tabs
+  $('.tabs').on('click', '.tabs__link', function(event) {
+    event.preventDefault;
+    $('.tabs__link').removeClass('tabs__link--active');
+    $(this).addClass('tabs__link--active');
+
+    var href = $(this).attr('href');
+    $('.tabs__content').removeClass('tabs__content--active');
+    $(href).addClass('tabs__content--active');
+  })
+
   //mCustomScrollbar
   $(".content").mCustomScrollbar({
     setWidth: true,
